@@ -3,7 +3,6 @@
   "description": "Provide packages for lauching web server and runing tests",
   "author": "Andrew Kovalenko <mr.Kovalenko.a.o@gmail.com>",
   "dependencies": {
-    "karma": "0.12.x",
     "connect": "2.14.x"
   },
   "engine": "node >= 0.10.0"
