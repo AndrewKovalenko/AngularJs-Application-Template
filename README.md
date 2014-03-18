@@ -9,7 +9,7 @@ To see test page do:
 npm install
 node server.js
 ````
-and visit [127.0.0.1:8080](http"//127.0.0.1:8080) in your browser
+and visit [http://127.0.0.1:8080/application/index.html](http://127.0.0.1:8080/application/index.html) in your browser
 
 
 
