@@ -23,20 +23,26 @@
   var applicationStartModule = function(angular, routingConfiguration) {
     angular.element(document).ready(function() {
       var demoApplication = angular.module("demoApplication", 
-                                          ["ui.router", 
-                                            "app.controllers",
-                                            "app.factories"
-                                          ]);
+        ["ui.router",
+        "app.controllers",
+        "app.directives",
+        "app.factories",
+        "app.services",
+        "app.filters"
+        ]);
       demoApplication.config(routingConfiguration);
       angular.bootstrap(document, ['demoApplication']);
 
     });
   };
 
-  require(['angular', 
-          'config/routing-configuration',
-          'controllers/controllers', 
-          'factories/factories', 
-          'angular-ui-router'], 
-          applicationStartModule );
+  require(['angular',
+    'config/routing-configuration',
+    'controllers-module',
+    'directives-module',
+    'factories-module',
+    'services-module',
+    'filters-module',
+    'angular-ui-router'],
+    applicationStartModule );
 })(window.require);
